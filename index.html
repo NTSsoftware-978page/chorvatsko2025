@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stažení složky Chorvatsko 2025</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 700px;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.8em;
+            margin-bottom: 25px;
+            position: relative;
+            animation: slideInLeft 1s ease-out;
+        }
+
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #3498db;
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+
+        hr {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 30px 0;
+            animation: scaleIn 1s ease-out;
+        }
+
+
+        @keyframes scaleIn {
+            from { transform: scaleX(0); }
+            to { transform: scaleX(1); }
+        }
+
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            animation: fadeInText 1.2s ease-out;
+        }
+
+
+        @keyframes fadeInText {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+
+        .info-section {
+            text-align: left;
+            margin-top: 30px;
+            padding: 0 20px;
+        }
+
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed #eee;
+            animation: slideInRight 1.3s ease-out;
+        }
+
+
+        .info-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+
+        .info-label {
+            font-weight: 700;
+            color: #555;
+            flex-basis: 35%;
+        }
+
+
+        .info-value {
+            color: #777;
+            flex-basis: 65%;
+            text-align: right;
+        }
+
+
+        .info-value.unavailable {
+            color: #e74c3c;
+            font-weight: 700;
+        }
+
+
+        .info-value.available-soon {
+            color: #f39c12;
+            font-weight: 700;
+        }
+
+
+        .download-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            margin-top: 40px;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            animation: bounceIn 1.5s ease-out;
+        }
+
+
+        @keyframes bounceIn {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.1); opacity: 1; }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); }
+        }
+
+
+        .download-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+
+        .download-button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+
+        .download-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            transition: all 0.75s ease-out;
+            transform: translate(-50%, -50%) scale(0);
+            z-index: 0;
+        }
+
+
+        .download-button:hover::before {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0;
+        }
+
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+
+            .container {
+                padding: 25px;
+            }
+
+
+            .download-button {
+                padding: 12px 25px;
+                font-size: 1.1em;
+            }
+
+
+            .info-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+
+            .info-label {
+                margin-bottom: 5px;
+            }
+
+
+            .info-value {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Stažení složky Chorvatsko 2025</h1>
+
+
+        <hr>
+
+
+        <p>Složku Chorvatsko 2025 si můžeš stáhnout tlačítkem níže. Tlačítko níže tě přesměruje na QuickShare a ten ti stáhne kompletní celou složku Chorvatsko 2025.</p>
+
+
+        <hr>
+
+
+        <div class="info-section">
+            <div class="info-item">
+                <span class="info-label">Stav:</span>
+                <span class="info-value unavailable">nedostupné</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Kdy bude dostupné:</span>
+                <span class="info-value available-soon">nejdříve pondělí 21.7.2025 v 15:00, nejpozději úterý 22.7.2025 v 13:00.</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Doba na stažení:</span>
+                <span class="info-value">Tlačítko níže tě přesměruje na QuickShare a na stažení máš 48 hodin od chvíle, kdy odkaz na QuickShare do tlačítka vložím.</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Můžeš stáhnout nejpozději do:</span>
+                <span class="info-value">Čas bude upřesněn</span>
+            </div>
+        </div>
+
+
+        <hr>
+
+
+        <a href="https://goloprehc.cz" class="download-button" target="_blank" rel="noopener noreferrer">Stáhnout Chorvatsko 2025</a>
+    </div>
+</body>
+</html>
